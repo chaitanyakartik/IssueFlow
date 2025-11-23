@@ -1,0 +1,70 @@
+.user-card {
+  background: white;
+  border: 2px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+}
+
+.user-card:hover {
+  border-color: #0969da;
+  box-shadow: 0 4px 12px rgba(9, 105, 218, 0.15);
+  transform: translateY(-2px);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.user-info {
+  width: 100%;
+}
+
+.user-name {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #24292f;
+}
+
+.user-email {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #57606a;
+  word-break: break-all;
+}
+
+.user-role {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.user-role.admin {
+  background: #ddf4ff;
+  color: #0969da;
+}
+
+.user-role.user {
+  background: #f6f8fa;
+  color: #57606a;
+}
