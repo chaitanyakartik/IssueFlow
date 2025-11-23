@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import Issues from './pages/Issues';
+import IssueDetail from './pages/IssueDetail';
 import './App.css';
 
 // Protected Route Component
@@ -42,6 +43,14 @@ function AppRoutes() {
         element={
           <ProtectedRoute>
             <Issues />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/issues/:id" 
+        element={
+          <ProtectedRoute>
+            <IssueDetail />
           </ProtectedRoute>
         } 
       />
